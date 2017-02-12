@@ -14,7 +14,7 @@ and testing of new OpenFlow features.
  * OpenFlow Capable Switch - ability to run multiple logical switches,
  * Support for [OF-Config 1.1.1][ofc11] management protocol,
  * Modular architecture, easily extensible.
- * Support for ONF TR-532 Microwave Information Model through a NETCONF interface
+ * Support for [ONF TR-532 Microwave Information Model][onftr532] through a NETCONF interface
 
 ## How to use it?
 
@@ -173,3 +173,4 @@ through table_mod messages, and never sends flow vacancy events.
  [erlang-src]: http://www.erlang.org/download.html
  [erlang-bin]: http://www.erlang-solutions.com/section/132/download-erlang-otp
  [esl]: http://www.erlang-solutions.com
+ [onftr532]: https://www.opennetworking.org/images/stories/downloads/sdn-resources/technical-reports/TR-532-Microwave-Information-Model-V1.pdf
