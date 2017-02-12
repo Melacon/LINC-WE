@@ -1,0 +1,81 @@
+2017-01-25 22:26:43 =ERROR REPORT====
+Bad input fd in erts_poll()! fd=21, port=#Port<0.1381>, driver=fd, name=21/21
+
+2017-01-25 22:26:43 =ERROR REPORT====
+Bad input fd in erts_poll()! fd=13, port=#Port<0.1383>, driver=fd, name=13/13
+
+2017-01-25 22:28:48 =SUPERVISOR REPORT====
+     Supervisor: {local,ey_sup}
+     Context:    start_error
+     Reason:     {badarg,[{erlang,open_port,[{spawn,{ok,"netconfd --log-level=debug --access-control=off --target=running --module=MicrowaveModel-ObjectClasses-AirInterface"}},[]],[]},{ey_server,create_port,0,[{file,"src/ey_server.erl"},{line,153}]},{ey_server,init,1,[{file,"src/ey_server.erl"},{line,64}]},{gen_server,init_it,6,[{file,"gen_server.erl"},{line,306}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,239}]}]}
+     Offender:   [{pid,undefined},{name,ey_server},{mfargs,{ey_server,start_link,[]}},{restart_type,permanent},{shutdown,5000},{child_type,worker}]
+
+2017-01-25 22:28:48 =CRASH REPORT====
+  crasher:
+    initial call: ey_server:init/1
+    pid: <0.735.0>
+    registered_name: []
+    exception exit: {{badarg,[{erlang,open_port,[{spawn,{ok,"netconfd --log-level=debug --access-control=off --target=running --module=MicrowaveModel-ObjectClasses-AirInterface"}},[]],[]},{ey_server,create_port,0,[{file,"src/ey_server.erl"},{line,153}]},{ey_server,init,1,[{file,"src/ey_server.erl"},{line,64}]},{gen_server,init_it,6,[{file,"gen_server.erl"},{line,306}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,239}]}]},[{gen_server,init_it,6,[{file,"gen_server.erl"},{line,330}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,239}]}]}
+    ancestors: [ey_sup,<0.733.0>]
+    messages: []
+    links: [<0.734.0>]
+    dictionary: []
+    trap_exit: true
+    status: running
+    heap_size: 987
+    stack_size: 27
+    reductions: 422
+  neighbours:
+2017-01-25 22:28:48 =CRASH REPORT====
+  crasher:
+    initial call: application_master:init/4
+    pid: <0.732.0>
+    registered_name: []
+    exception exit: {{{error,{shutdown,{failed_to_start_child,ey_server,{badarg,[{erlang,open_port,[{spawn,{ok,"netconfd --log-level=debug --access-control=off --target=running --module=MicrowaveModel-ObjectClasses-AirInterface"}},[]],[]},{ey_server,create_port,0,[{file,"src/ey_server.erl"},{line,153}]},{ey_server,init,1,[{file,"src/ey_server.erl"},{line,64}]},{gen_server,init_it,6,[{file,"gen_server.erl"},{line,306}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,239}]}]}}}},{ey_app,start,[normal,[]]}},[{application_master,init,4,[{file,"application_master.erl"},{line,133}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,239}]}]}
+    ancestors: [<0.731.0>]
+    messages: [{'EXIT',<0.733.0>,normal}]
+    links: [<0.731.0>,<0.589.0>]
+    dictionary: []
+    trap_exit: true
+    status: running
+    heap_size: 987
+    stack_size: 27
+    reductions: 147
+  neighbours:
+2017-01-25 22:30:32 =ERROR REPORT====
+Bad input fd in erts_poll()! fd=20, port=#Port<0.1363>, driver=fd, name=20/20
+
+2017-01-25 22:30:33 =ERROR REPORT====
+** Generic server <0.755.0> terminating 
+** Last message in was {'EXIT',<0.748.0>,shutdown}
+** When Server state == {state,"LogicalSwitch2-Port2",true,"tap1",physical,2,{ofp_port,2,<<38,135,39,0,65,250>>,"Port2",[],[live,link_down],['100mb_fd',copper,autoneg],[copper,autoneg],['100mb_fd',copper,autoneg],['100mb_fd',copper,autoneg],5000,5000},#Ref<0.0.0.504>,#Port<0.1365>,<0.758.0>,undefined,undefined,undefined,undefined,disabled,undefined,none}
+** Reason for termination == 
+** {{badmatch,{error,badarg}},[{linc_us4_oe_port_load_regulator,cancel_periodic_check,1,[{file,"src/linc_us4_oe_port_load_regulator.erl"},{line,50}]},{linc_us4_oe_port,terminate,2,[{file,"src/linc_us4_oe_port.erl"},{line,697}]},{gen_server,terminate,6,[{file,"gen_server.erl"},{line,721}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,239}]}]}
+2017-01-25 22:30:33 =CRASH REPORT====
+  crasher:
+    initial call: linc_us4_oe_port:init/1
+    pid: <0.755.0>
+    registered_name: []
+    exception exit: {{{badmatch,{error,badarg}},[{linc_us4_oe_port_load_regulator,cancel_periodic_check,1,[{file,"src/linc_us4_oe_port_load_regulator.erl"},{line,50}]},{linc_us4_oe_port,terminate,2,[{file,"src/linc_us4_oe_port.erl"},{line,697}]},{gen_server,terminate,6,[{file,"gen_server.erl"},{line,721}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,239}]}]},[{gen_server,terminate,6,[{file,"gen_server.erl"},{line,724}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,239}]}]}
+    ancestors: [<0.748.0>,<0.746.0>,<0.742.0>,linc_capable_sup,<0.729.0>]
+    messages: []
+    links: [#Port<0.1365>,<0.758.0>]
+    dictionary: []
+    trap_exit: true
+    status: running
+    heap_size: 4185
+    stack_size: 27
+    reductions: 3511
+  neighbours:
+2017-01-25 22:30:33 =SUPERVISOR REPORT====
+     Supervisor: {<0.748.0>,linc_us4_oe_port_sup}
+     Context:    shutdown_error
+     Reason:     {{badmatch,{error,badarg}},[{linc_us4_oe_port_load_regulator,cancel_periodic_check,1,[{file,"src/linc_us4_oe_port_load_regulator.erl"},{line,50}]},{linc_us4_oe_port,terminate,2,[{file,"src/linc_us4_oe_port.erl"},{line,697}]},{gen_server,terminate,6,[{file,"gen_server.erl"},{line,721}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,239}]}]}
+     Offender:   [{nb_children,1},{name,linc_us4_oe_port},{mfargs,{linc_us4_oe_port,start_link,[2]}},{restart_type,transient},{shutdown,5000},{child_type,worker}]
+
+2017-01-25 22:34:08 =ERROR REPORT====
+Bad input fd in erts_poll()! fd=21, port=#Port<0.1368>, driver=fd, name=21/21
+
+2017-01-25 22:34:08 =ERROR REPORT====
+Bad input fd in erts_poll()! fd=24, port=#Port<0.1366>, driver=fd, name=24/24
+

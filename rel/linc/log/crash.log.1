@@ -1,0 +1,102 @@
+2016-12-06 15:54:49 =SUPERVISOR REPORT====
+     Supervisor: {<0.763.0>,ofp_channel_sup}
+     Context:    child_terminated
+     Reason:     killed
+     Offender:   [{pid,<0.764.0>},{name,ofp_client},{mfargs,{ofp_client,start_link,[ofp_channel_1,"Switch0-Controller",{remote_peer,"192.168.100.1",6653,tcp},[{controlling_process,<0.707.0>},{version,4}]]}},{restart_type,transient},{shutdown,1000},{child_type,worker}]
+
+2016-12-06 15:55:00 =ERROR REPORT====
+Bad input fd in erts_poll()! fd=20, port=#Port<0.1341>, driver=fd, name=20/20
+
+2017-01-16 20:03:35 =ERROR REPORT====
+** Generic server <0.8801.1> terminating 
+** Last message in was {ssh_cm,<0.8686.1>,{data,0,0,<<"\n#185\n<rpc xmlns=\"urn:ietf:params:xml:ns:netconf:base:1.0\" message-id=\"2\">\n    <copy-config>\n  <target>\n    <running/>\n  </target>\n  <source>\n    <running/>\n  </source>\n</copy-config>\n</rpc>\n\n##\n">>}}
+** When Server state == {state,<0.8686.1>,enetconf_ssh,{state,<0.8686.1>,0,1,enetconf_fm_chunked,{chunk_parser,<<>>},linc_ofconfig},0,false}
+** Reason for termination == 
+** {noproc,{gen_server,call,[linc_ofconfig,{copy_config,1,running,running},infinity]}}
+2017-01-16 20:03:35 =CRASH REPORT====
+  crasher:
+    initial call: ssh_channel:init/1
+    pid: <0.8801.1>
+    registered_name: []
+    exception exit: {{noproc,{gen_server,call,[linc_ofconfig,{copy_config,1,running,running},infinity]}},[{gen_server,terminate,6,[{file,"gen_server.erl"},{line,746}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,239}]}]}
+    ancestors: [<0.8684.1>,<0.8683.1>,'ssh_system_"lincdev-VirtualBox"_1830_sup',sshd_sup,ssh_sup,<0.7502.1>]
+    messages: []
+    links: [<0.8684.1>]
+    dictionary: []
+    trap_exit: true
+    status: running
+    heap_size: 987
+    stack_size: 27
+    reductions: 6246
+  neighbours:
+2017-01-16 20:03:35 =SUPERVISOR REPORT====
+     Supervisor: {<0.8684.1>,ssh_channel_sup}
+     Context:    child_terminated
+     Reason:     {noproc,{gen_server,call,[linc_ofconfig,{copy_config,1,running,running},infinity]}}
+     Offender:   [{pid,<0.8801.1>},{name,#Ref<0.0.0.3774>},{mfargs,{ssh_channel,start_link,undefined}},{restart_type,temporary},{shutdown,3600},{child_type,worker}]
+
+2017-01-16 20:06:44 =ERROR REPORT====
+Bad input fd in erts_poll()! fd=19, port=#Port<0.1341>, driver=fd, name=19/19
+
+2017-01-16 20:08:47 =ERROR REPORT====
+Bad input fd in erts_poll()! fd=22, port=#Port<0.1341>, driver=fd, name=22/22
+
+2017-01-16 20:15:21 =ERROR REPORT====
+Bad input fd in erts_poll()! fd=22, port=#Port<0.1341>, driver=fd, name=22/22
+
+2017-01-16 20:15:38 =ERROR REPORT====
+** Generic server <0.728.0> terminating 
+** Last message in was {'EXIT',<0.719.0>,shutdown}
+** When Server state == {state,"LogicalSwitch3-Port2",true,"tap1",physical,3,{ofp_port,2,<<222,141,20,124,7,234>>,"Port2",[],[live,link_down],['100mb_fd',copper,autoneg],[copper,autoneg],['100mb_fd',copper,autoneg],['100mb_fd',copper,autoneg],5000,5000},#Ref<0.0.0.390>,#Port<0.1343>,<0.730.0>,undefined,undefined,undefined,undefined,disabled,undefined,none}
+** Reason for termination == 
+** {{badmatch,{error,badarg}},[{linc_us4_oe_port_load_regulator,cancel_periodic_check,1,[{file,"src/linc_us4_oe_port_load_regulator.erl"},{line,50}]},{linc_us4_oe_port,terminate,2,[{file,"src/linc_us4_oe_port.erl"},{line,697}]},{gen_server,terminate,6,[{file,"gen_server.erl"},{line,721}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,239}]}]}
+2017-01-16 20:15:38 =CRASH REPORT====
+  crasher:
+    initial call: linc_us4_oe_port:init/1
+    pid: <0.728.0>
+    registered_name: []
+    exception exit: {{{badmatch,{error,badarg}},[{linc_us4_oe_port_load_regulator,cancel_periodic_check,1,[{file,"src/linc_us4_oe_port_load_regulator.erl"},{line,50}]},{linc_us4_oe_port,terminate,2,[{file,"src/linc_us4_oe_port.erl"},{line,697}]},{gen_server,terminate,6,[{file,"gen_server.erl"},{line,721}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,239}]}]},[{gen_server,terminate,6,[{file,"gen_server.erl"},{line,724}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,239}]}]}
+    ancestors: [<0.719.0>,<0.716.0>,<0.714.0>,linc_capable_sup,<0.702.0>]
+    messages: []
+    links: [#Port<0.1343>,<0.730.0>]
+    dictionary: []
+    trap_exit: true
+    status: running
+    heap_size: 2586
+    stack_size: 27
+    reductions: 3565
+  neighbours:
+2017-01-16 20:15:38 =SUPERVISOR REPORT====
+     Supervisor: {<0.719.0>,linc_us4_oe_port_sup}
+     Context:    shutdown_error
+     Reason:     {{badmatch,{error,badarg}},[{linc_us4_oe_port_load_regulator,cancel_periodic_check,1,[{file,"src/linc_us4_oe_port_load_regulator.erl"},{line,50}]},{linc_us4_oe_port,terminate,2,[{file,"src/linc_us4_oe_port.erl"},{line,697}]},{gen_server,terminate,6,[{file,"gen_server.erl"},{line,721}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,239}]}]}
+     Offender:   [{nb_children,1},{name,linc_us4_oe_port},{mfargs,{linc_us4_oe_port,start_link,[3]}},{restart_type,transient},{shutdown,5000},{child_type,worker}]
+
+2017-01-16 20:15:38 =ERROR REPORT====
+** Generic server <0.730.0> terminating 
+** Last message in was {'EXIT',<0.728.0>,{{badmatch,{error,badarg}},[{linc_us4_oe_port_load_regulator,cancel_periodic_check,1,[{file,"src/linc_us4_oe_port_load_regulator.erl"},{line,50}]},{linc_us4_oe_port,terminate,2,[{file,"src/linc_us4_oe_port.erl"},{line,697}]},{gen_server,terminate,6,[{file,"gen_server.erl"},{line,721}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,239}]}]}}
+** When Server state == {state,false,<0.728.0>,18,<<"tap1">>,[tap,no_pi]}
+** Reason for termination == 
+** {{badmatch,{error,badarg}},[{linc_us4_oe_port_load_regulator,cancel_periodic_check,1,[{file,"src/linc_us4_oe_port_load_regulator.erl"},{line,50}]},{linc_us4_oe_port,terminate,2,[{file,"src/linc_us4_oe_port.erl"},{line,697}]},{gen_server,terminate,6,[{file,"gen_server.erl"},{line,721}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,239}]}]}
+2017-01-16 20:15:38 =CRASH REPORT====
+  crasher:
+    initial call: tuncer:init/1
+    pid: <0.730.0>
+    registered_name: []
+    exception exit: {{{badmatch,{error,badarg}},[{linc_us4_oe_port_load_regulator,cancel_periodic_check,1,[{file,"src/linc_us4_oe_port_load_regulator.erl"},{line,50}]},{linc_us4_oe_port,terminate,2,[{file,"src/linc_us4_oe_port.erl"},{line,697}]},{gen_server,terminate,6,[{file,"gen_server.erl"},{line,721}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,239}]}]},[{gen_server,terminate,6,[{file,"gen_server.erl"},{line,746}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,239}]}]}
+    ancestors: [<0.728.0>,<0.719.0>,<0.716.0>,<0.714.0>,linc_capable_sup,<0.702.0>]
+    messages: []
+    links: []
+    dictionary: []
+    trap_exit: true
+    status: running
+    heap_size: 610
+    stack_size: 27
+    reductions: 1746
+  neighbours:
+2017-01-16 20:21:33 =ERROR REPORT====
+Bad input fd in erts_poll()! fd=22, port=#Port<0.1354>, driver=fd, name=22/22
+
+2017-01-16 20:21:33 =ERROR REPORT====
+Bad input fd in erts_poll()! fd=18, port=#Port<0.1356>, driver=fd, name=18/18
+

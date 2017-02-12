@@ -1,0 +1,94 @@
+2017-01-24 18:24:02.510 [info] <0.586.0> Application lager started on node 'linc@lincdev-VirtualBox'
+2017-01-24 18:24:02.510 [info] <0.586.0> Application ssh started on node 'linc@lincdev-VirtualBox'
+2017-01-24 18:24:02.511 [info] <0.586.0> Application enetconf started on node 'linc@lincdev-VirtualBox'
+2017-01-24 18:24:02.545 [info] <0.586.0> Application linc started on node 'linc@lincdev-VirtualBox'
+2017-01-24 18:24:02.554 [info] <0.747.0>@linc_us4_oe_port:add:720 Created port: {port,5,[{queues_status,disabled},{queues,[]},{config,{port_configuration,undefined,up,false,false,false}},{features,{features,undefined,'100Mb-FD',true,copper,unsupported}},{queues,[]},{port_no,1},{interface,"dummy"},{type,optical}]}
+2017-01-24 18:24:02.554 [info] <0.750.0>@linc_us4_oe_port:add:720 Created port: {port,3,[{queues_status,disabled},{queues,[]},{config,{port_configuration,undefined,up,false,false,false}},{features,{features,undefined,'100Mb-FD',true,copper,unsupported}},{queues,[]},{port_no,1},{interface,"dummy"},{type,optical}]}
+2017-01-24 18:24:02.555 [info] <0.762.0>@linc_us4_oe_port:set_port_state_and_notify_controllers:1001 [SwitchId=3][PortNo=1] Set port state []
+2017-01-24 18:24:02.555 [info] <0.771.0>@linc_us4_oe_port:set_port_state_and_notify_controllers:1001 [SwitchId=2][PortNo=2] Set port state []
+2017-01-24 18:24:02.555 [info] <0.750.0>@linc_us4_oe_port:add:720 Created port: {port,4,[{queues_status,disabled},{queues,[]},{config,{port_configuration,undefined,up,false,false,false}},{features,{features,undefined,'100Mb-FD',true,copper,unsupported}},{queues,[]},{port_no,2},{interface,"dummy"},{type,optical}]}
+2017-01-24 18:24:02.989 [notice] <0.699.0>@lager_app:132 Deprecated lager_file_backend config detected, please consider updating it
+2017-01-24 18:24:03.711 [info] <0.757.0>@linc_us4_oe_port:add:720 Created port: {port,1,[{queues_status,disabled},{queues,[]},{config,{port_configuration,undefined,up,false,false,false}},{features,{features,undefined,'100Mb-FD',true,copper,unsupported}},{queues,[]},{port_no,1},{interface,"tap0"},{ip,"192.168.100.101"}]}
+2017-01-24 18:24:03.716 [info] <0.763.0>@linc_us4_oe_port:set_port_state_and_notify_controllers:1001 [SwitchId=2][PortNo=1] Set port state []
+2017-01-24 18:24:03.716 [info] <0.799.0>@linc_us4_oe_port:set_port_state_and_notify_controllers:1001 [SwitchId=1][PortNo=2] Set port state []
+2017-01-24 18:24:03.717 [info] <0.757.0>@linc_us4_oe_port:add:720 Created port: {port,2,[{queues_status,disabled},{queues,[]},{config,{port_configuration,undefined,up,false,false,false}},{features,{features,undefined,'100Mb-FD',true,copper,unsupported}},{queues,[]},{port_no,2},{interface,"dummy"},{type,optical}]}
+2017-01-24 18:24:03.724 [info] <0.747.0>@linc_us4_oe_port:add:720 Created port: {port,6,[{queues_status,disabled},{queues,[]},{config,{port_configuration,undefined,up,false,false,false}},{features,{features,undefined,'100Mb-FD',true,copper,unsupported}},{queues,[]},{port_no,2},{interface,"tap1"},{ip,"192.168.100.102"}]}
+2017-01-24 20:42:27.079 [info] <0.763.0>@linc_us4_oe_port:set_port_state_and_notify_controllers:1001 [SwitchId=2][PortNo=1] Set port state [link_down]
+2017-01-24 20:42:27.301 [info] <0.762.0>@linc_us4_oe_port:set_port_state_and_notify_controllers:1001 [SwitchId=3][PortNo=1] Set port state [link_down]
+2017-01-25 21:58:19.082 [info] <0.586.0> Application lager started on node 'linc@lincdev-VirtualBox'
+2017-01-25 21:58:19.087 [error] <0.726.0>@linc_capable_sup:start_dependency:137 Starting erl_yuma application failed because: {error,{"no such file or directory","erl_yuma.app"}}
+2017-01-25 21:58:19.094 [info] <0.586.0> Application linc started on node 'linc@lincdev-VirtualBox'
+2017-01-25 21:58:19.099 [info] <0.735.0>@linc_us4_oe_port:add:720 Created port: {port,3,[{queues_status,disabled},{queues,[]},{config,{port_configuration,undefined,up,false,false,false}},{features,{features,undefined,'100Mb-FD',true,copper,unsupported}},{queues,[]},{port_no,1},{interface,"dummy"},{type,optical}]}
+2017-01-25 21:58:19.576 [notice] <0.699.0>@lager_app:132 Deprecated lager_file_backend config detected, please consider updating it
+2017-01-25 21:58:20.302 [info] <0.738.0>@linc_us4_oe_port:add:720 Created port: {port,1,[{queues_status,disabled},{queues,[]},{config,{port_configuration,undefined,up,false,false,false}},{features,{features,undefined,'100Mb-FD',true,copper,unsupported}},{queues,[]},{port_no,1},{interface,"tap0"},{ip,"192.168.100.101"}]}
+2017-01-25 21:58:20.304 [info] <0.749.0>@linc_us4_oe_port:set_port_state_and_notify_controllers:1001 [SwitchId=2][PortNo=1] Set port state []
+2017-01-25 21:58:20.304 [info] <0.766.0>@linc_us4_oe_port:set_port_state_and_notify_controllers:1001 [SwitchId=1][PortNo=2] Set port state []
+2017-01-25 21:58:20.305 [info] <0.738.0>@linc_us4_oe_port:add:720 Created port: {port,2,[{queues_status,disabled},{queues,[]},{config,{port_configuration,undefined,up,false,false,false}},{features,{features,undefined,'100Mb-FD',true,copper,unsupported}},{queues,[]},{port_no,2},{interface,"dummy"},{type,optical}]}
+2017-01-25 21:58:20.314 [info] <0.735.0>@linc_us4_oe_port:add:720 Created port: {port,4,[{queues_status,disabled},{queues,[]},{config,{port_configuration,undefined,up,false,false,false}},{features,{features,undefined,'100Mb-FD',true,copper,unsupported}},{queues,[]},{port_no,2},{interface,"tap1"},{ip,"192.168.100.102"}]}
+2017-01-25 22:26:43.103 [info] <0.749.0>@linc_us4_oe_port:set_port_state_and_notify_controllers:1001 [SwitchId=2][PortNo=1] Set port state [link_down]
+2017-01-25 22:26:43.125 [error] emulator Bad input fd in erts_poll()! fd=21, port=#Port<0.1381>, driver=fd, name=21/21
+
+
+2017-01-25 22:26:43.133 [error] emulator Bad input fd in erts_poll()! fd=13, port=#Port<0.1383>, driver=fd, name=13/13
+
+
+2017-01-25 22:28:48.497 [info] <0.589.0> Application lager started on node 'linc@lincdev-VirtualBox'
+2017-01-25 22:28:48.498 [info] <0.735.0> Starting OpenYuma NETCONF server...
+
+2017-01-25 22:28:48.498 [error] <0.734.0> Supervisor ey_sup had child ey_server started with ey_server:start_link() at undefined exit with reason bad argument in call to erlang:open_port({spawn,{ok,"netconfd --log-level=debug --access-control=off --target=running --module=MicrowaveM..."}}, []) in ey_server:create_port/0 line 153 in context start_error
+2017-01-25 22:28:48.498 [error] <0.735.0> CRASH REPORT Process <0.735.0> with 0 neighbours exited with reason: bad argument in call to erlang:open_port({spawn,{ok,"netconfd --log-level=debug --access-control=off --target=running --module=MicrowaveM..."}}, []) in ey_server:create_port/0 line 153 in gen_server:init_it/6 line 330
+2017-01-25 22:28:48.498 [error] <0.732.0> CRASH REPORT Process <0.732.0> with 0 neighbours exited with reason: {{error,{shutdown,{failed_to_start_child,ey_server,{badarg,[{erlang,open_port,[{spawn,{ok,"netconfd --log-level=debug --access-control=off --target=running --module=MicrowaveModel-ObjectClasses-AirInterface"}},[]],[]},{ey_server,create_port,0,[{file,"src/ey_server.erl"},{line,153}]},{ey_server,init,1,[{file,"src/ey_server.erl"},{line,64}]},{gen_server,init_it,6,[{file,"gen_server.erl"},{line,306}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,239}]}]}}}},{ey_app,start,[normal,[]]}} in application_master:init/4 line 133
+2017-01-25 22:28:48.499 [error] <0.729.0>@linc_capable_sup:start_dependency:137 Starting erl_yuma application failed because: {error,{{error,{shutdown,{failed_to_start_child,ey_server,{badarg,[{erlang,open_port,[{spawn,{ok,"netconfd --log-level=debug --access-control=off --target=running --module=MicrowaveModel-ObjectClasses-AirInterface"}},[]],[]},{ey_server,create_port,0,[{file,"src/ey_server.erl"},{line,153}]},{ey_server,init,1,[{file,"src/ey_server.erl"},{line,64}]},{gen_server,init_it,6,[{file,"gen_server.erl"},{line,306}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,239}]}]}}}},{ey_app,start,[normal,[]]}}}
+2017-01-25 22:28:48.499 [info] <0.589.0> Application erl_yuma exited with reason: {{error,{shutdown,{failed_to_start_child,ey_server,{badarg,[{erlang,open_port,[{spawn,{ok,"netconfd --log-level=debug --access-control=off --target=running --module=MicrowaveModel-ObjectClasses-AirInterface"}},[]],[]},{ey_server,create_port,0,[{file,"src/ey_server.erl"},{line,153}]},{ey_server,init,1,[{file,"src/ey_server.erl"},{line,64}]},{gen_server,init_it,6,[{file,"gen_server.erl"},{line,306}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,239}]}]}}}},{ey_app,start,[normal,[]]}}
+2017-01-25 22:28:48.536 [info] <0.589.0> Application linc started on node 'linc@lincdev-VirtualBox'
+2017-01-25 22:28:48.536 [info] <0.743.0>@linc_us4_oe_port:add:720 Created port: {port,3,[{queues_status,disabled},{queues,[]},{config,{port_configuration,undefined,up,false,false,false}},{features,{features,undefined,'100Mb-FD',true,copper,unsupported}},{queues,[]},{port_no,1},{interface,"dummy"},{type,optical}]}
+2017-01-25 22:28:48.989 [notice] <0.702.0>@lager_app:132 Deprecated lager_file_backend config detected, please consider updating it
+2017-01-25 22:28:49.720 [info] <0.750.0>@linc_us4_oe_port:add:720 Created port: {port,1,[{queues_status,disabled},{queues,[]},{config,{port_configuration,undefined,up,false,false,false}},{features,{features,undefined,'100Mb-FD',true,copper,unsupported}},{queues,[]},{port_no,1},{interface,"tap0"},{ip,"192.168.100.101"}]}
+2017-01-25 22:28:49.722 [info] <0.750.0>@linc_us4_oe_port:add:720 Created port: {port,2,[{queues_status,disabled},{queues,[]},{config,{port_configuration,undefined,up,false,false,false}},{features,{features,undefined,'100Mb-FD',true,copper,unsupported}},{queues,[]},{port_no,2},{interface,"dummy"},{type,optical}]}
+2017-01-25 22:28:49.723 [info] <0.774.0>@linc_us4_oe_port:set_port_state_and_notify_controllers:1001 [SwitchId=1][PortNo=2] Set port state []
+2017-01-25 22:28:49.723 [info] <0.749.0>@linc_us4_oe_port:set_port_state_and_notify_controllers:1001 [SwitchId=2][PortNo=1] Set port state []
+2017-01-25 22:28:49.753 [warning] <0.755.0>@linc_us4_oe_port:mark_link_state_as:1014 Setting down port that already is down
+2017-01-25 22:28:49.753 [info] <0.755.0>@linc_us4_oe_port:set_port_state_and_notify_controllers:1001 [SwitchId=2][PortNo=2] Set port state [live,link_down]
+2017-01-25 22:28:49.753 [info] <0.743.0>@linc_us4_oe_port:add:720 Created port: {port,4,[{queues_status,disabled},{queues,[]},{config,{port_configuration,undefined,up,false,false,false}},{features,{features,undefined,'100Mb-FD',true,copper,unsupported}},{queues,[]},{port_no,2},{interface,"tap1"},{ip,"192.168.100.102"}]}
+2017-01-25 22:30:32.932 [info] <0.749.0>@linc_us4_oe_port:set_port_state_and_notify_controllers:1001 [SwitchId=2][PortNo=1] Set port state [link_down]
+2017-01-25 22:30:32.934 [error] emulator Bad input fd in erts_poll()! fd=20, port=#Port<0.1363>, driver=fd, name=20/20
+
+
+2017-01-25 22:30:33.985 [error] <0.755.0> gen_server <0.755.0> terminated with reason: no match of right hand value {error,badarg} in linc_us4_oe_port_load_regulator:cancel_periodic_check/1 line 50
+2017-01-25 22:30:33.990 [error] <0.755.0> CRASH REPORT Process <0.755.0> with 0 neighbours exited with reason: no match of right hand value {error,badarg} in linc_us4_oe_port_load_regulator:cancel_periodic_check/1 line 50 in gen_server:terminate/6 line 724
+2017-01-25 22:30:33.991 [error] <0.748.0> Supervisor {<0.748.0>,linc_us4_oe_port_sup} had child linc_us4_oe_port started with linc_us4_oe_port:start_link(2) at undefined exit with reason no match of right hand value {error,badarg} in linc_us4_oe_port_load_regulator:cancel_periodic_check/1 line 50 in context shutdown_error
+2017-01-25 22:31:48.468 [info] <0.589.0> Application lager started on node 'linc@lincdev-VirtualBox'
+2017-01-25 22:31:48.469 [info] <0.737.0> Starting OpenYuma NETCONF server...
+
+2017-01-25 22:31:48.470 [info] <0.589.0> Application erl_yuma started on node 'linc@lincdev-VirtualBox'
+2017-01-25 22:31:48.491 [info] <0.745.0>@linc_us4_oe_port:add:720 Created port: {port,3,[{queues_status,disabled},{queues,[]},{config,{port_configuration,undefined,up,false,false,false}},{features,{features,undefined,'100Mb-FD',true,copper,unsupported}},{queues,[]},{port_no,1},{interface,"dummy"},{type,optical}]}
+2017-01-25 22:31:48.491 [info] <0.589.0> Application linc started on node 'linc@lincdev-VirtualBox'
+2017-01-25 22:31:48.962 [notice] <0.704.0>@lager_app:132 Deprecated lager_file_backend config detected, please consider updating it
+2017-01-25 22:31:49.699 [info] <0.745.0>@linc_us4_oe_port:add:720 Created port: {port,4,[{queues_status,disabled},{queues,[]},{config,{port_configuration,undefined,up,false,false,false}},{features,{features,undefined,'100Mb-FD',true,copper,unsupported}},{queues,[]},{port_no,2},{interface,"tap1"},{ip,"192.168.100.102"}]}
+2017-01-25 22:31:49.729 [info] <0.747.0>@linc_us4_oe_port:add:720 Created port: {port,1,[{queues_status,disabled},{queues,[]},{config,{port_configuration,undefined,up,false,false,false}},{features,{features,undefined,'100Mb-FD',true,copper,unsupported}},{queues,[]},{port_no,1},{interface,"tap0"},{ip,"192.168.100.101"}]}
+2017-01-25 22:31:49.730 [info] <0.755.0>@linc_us4_oe_port:set_port_state_and_notify_controllers:1001 [SwitchId=2][PortNo=1] Set port state []
+2017-01-25 22:31:49.730 [info] <0.778.0>@linc_us4_oe_port:set_port_state_and_notify_controllers:1001 [SwitchId=1][PortNo=2] Set port state []
+2017-01-25 22:31:49.730 [info] <0.747.0>@linc_us4_oe_port:add:720 Created port: {port,2,[{queues_status,disabled},{queues,[]},{config,{port_configuration,undefined,up,false,false,false}},{features,{features,undefined,'100Mb-FD',true,copper,unsupported}},{queues,[]},{port_no,2},{interface,"dummy"},{type,optical}]}
+2017-01-25 22:34:08.404 [info] <0.755.0>@linc_us4_oe_port:set_port_state_and_notify_controllers:1001 [SwitchId=2][PortNo=1] Set port state [link_down]
+2017-01-25 22:34:08.406 [error] emulator Bad input fd in erts_poll()! fd=21, port=#Port<0.1368>, driver=fd, name=21/21
+
+
+2017-01-25 22:34:08.431 [error] emulator Bad input fd in erts_poll()! fd=24, port=#Port<0.1366>, driver=fd, name=24/24
+
+
+2017-01-25 22:34:08.466 [info] <0.737.0> Stopping OpenYuma NETCONF server having Pid=22671
+
+2017-01-26 19:45:26.865 [info] <0.589.0> Application lager started on node 'linc@lincdev-VirtualBox'
+2017-01-26 19:45:26.866 [info] <0.737.0> Starting OpenYuma NETCONF server...
+
+2017-01-26 19:45:26.868 [info] <0.589.0> Application erl_yuma started on node 'linc@lincdev-VirtualBox'
+2017-01-26 19:45:26.880 [info] <0.589.0> Application linc started on node 'linc@lincdev-VirtualBox'
+2017-01-26 19:45:26.881 [info] <0.745.0>@linc_us4_oe_port:add:720 Created port: {port,3,[{queues_status,disabled},{queues,[]},{config,{port_configuration,undefined,up,false,false,false}},{features,{features,undefined,'100Mb-FD',true,copper,unsupported}},{queues,[]},{port_no,1},{interface,"dummy"},{type,optical}]}
+2017-01-26 19:45:27.354 [notice] <0.704.0>@lager_app:132 Deprecated lager_file_backend config detected, please consider updating it
+2017-01-26 19:45:28.084 [warning] <0.757.0>@linc_us4_oe_port:mark_link_state_as:1014 Setting down port that already is down
+2017-01-26 19:45:28.084 [info] <0.757.0>@linc_us4_oe_port:set_port_state_and_notify_controllers:1001 [SwitchId=1][PortNo=1] Set port state [live,link_down]
+2017-01-26 19:45:28.085 [info] <0.748.0>@linc_us4_oe_port:add:720 Created port: {port,1,[{queues_status,disabled},{queues,[]},{config,{port_configuration,undefined,up,false,false,false}},{features,{features,undefined,'100Mb-FD',true,copper,unsupported}},{queues,[]},{port_no,1},{interface,"tap0"},{ip,"192.168.100.101"}]}
+2017-01-26 19:45:28.086 [info] <0.748.0>@linc_us4_oe_port:add:720 Created port: {port,2,[{queues_status,disabled},{queues,[]},{config,{port_configuration,undefined,up,false,false,false}},{features,{features,undefined,'100Mb-FD',true,copper,unsupported}},{queues,[]},{port_no,2},{interface,"dummy"},{type,optical}]}
+2017-01-26 19:45:28.086 [info] <0.776.0>@linc_us4_oe_port:set_port_state_and_notify_controllers:1001 [SwitchId=1][PortNo=2] Set port state []
+2017-01-26 19:45:28.086 [info] <0.756.0>@linc_us4_oe_port:set_port_state_and_notify_controllers:1001 [SwitchId=2][PortNo=1] Set port state []
+2017-01-26 19:45:28.098 [info] <0.745.0>@linc_us4_oe_port:add:720 Created port: {port,4,[{queues_status,disabled},{queues,[]},{config,{port_configuration,undefined,up,false,false,false}},{features,{features,undefined,'100Mb-FD',true,copper,unsupported}},{queues,[]},{port_no,2},{interface,"tap1"},{ip,"192.168.100.102"}]}

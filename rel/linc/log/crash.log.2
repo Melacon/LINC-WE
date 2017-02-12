@@ -1,0 +1,87 @@
+2016-11-10 14:44:48 =ERROR REPORT====
+Bad input fd in erts_poll()! fd=18, port=#Port<0.1338>, driver=fd, name=18/18
+
+2016-11-15 10:29:28 =ERROR REPORT====
+** Generic server <0.731.0> terminating 
+** Last message in was {'EXIT',<0.722.0>,shutdown}
+** When Server state == {state,"LogicalSwitch3-Port2",true,"tap1",physical,3,{ofp_port,2,<<254,119,129,152,85,68>>,"Port2",[],[live],['100mb_fd',copper,autoneg],[copper,autoneg],['100mb_fd',copper,autoneg],['100mb_fd',copper,autoneg],5000,5000},#Ref<0.0.0.383>,#Port<0.1341>,<0.736.0>,undefined,undefined,undefined,undefined,disabled,undefined,none}
+** Reason for termination == 
+** {{badmatch,{error,badarg}},[{linc_us4_oe_port_load_regulator,cancel_periodic_check,1,[{file,"src/linc_us4_oe_port_load_regulator.erl"},{line,50}]},{linc_us4_oe_port,terminate,2,[{file,"src/linc_us4_oe_port.erl"},{line,697}]},{gen_server,terminate,6,[{file,"gen_server.erl"},{line,721}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,239}]}]}
+2016-11-15 11:21:45 =ERROR REPORT====
+** Generic server <0.724.0> terminating 
+** Last message in was {'EXIT',<0.714.0>,shutdown}
+** When Server state == {state,"LogicalSwitch1-Port1",true,"tap0",physical,1,{ofp_port,1,<<218,29,58,240,186,94>>,"Port1",[],[live],['100mb_fd',copper,autoneg],[copper,autoneg],['100mb_fd',copper,autoneg],['100mb_fd',copper,autoneg],5000,5000},#Ref<0.0.0.383>,#Port<0.1341>,<0.728.0>,undefined,undefined,undefined,undefined,disabled,undefined,none}
+** Reason for termination == 
+** {{badmatch,{error,badarg}},[{linc_us4_oe_port_load_regulator,cancel_periodic_check,1,[{file,"src/linc_us4_oe_port_load_regulator.erl"},{line,50}]},{linc_us4_oe_port,terminate,2,[{file,"src/linc_us4_oe_port.erl"},{line,697}]},{gen_server,terminate,6,[{file,"gen_server.erl"},{line,721}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,239}]}]}
+2016-11-15 11:21:45 =CRASH REPORT====
+  crasher:
+    initial call: linc_us4_oe_port:init/1
+    pid: <0.724.0>
+    registered_name: []
+    exception exit: {{{badmatch,{error,badarg}},[{linc_us4_oe_port_load_regulator,cancel_periodic_check,1,[{file,"src/linc_us4_oe_port_load_regulator.erl"},{line,50}]},{linc_us4_oe_port,terminate,2,[{file,"src/linc_us4_oe_port.erl"},{line,697}]},{gen_server,terminate,6,[{file,"gen_server.erl"},{line,721}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,239}]}]},[{gen_server,terminate,6,[{file,"gen_server.erl"},{line,724}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,239}]}]}
+    ancestors: [<0.714.0>,<0.711.0>,<0.706.0>,linc_capable_sup,<0.702.0>]
+    messages: []
+    links: [#Port<0.1341>,<0.728.0>]
+    dictionary: []
+    trap_exit: true
+    status: running
+    heap_size: 4185
+    stack_size: 27
+    reductions: 6512
+  neighbours:
+2016-11-15 11:21:45 =SUPERVISOR REPORT====
+     Supervisor: {<0.714.0>,linc_us4_oe_port_sup}
+     Context:    shutdown_error
+     Reason:     {{badmatch,{error,badarg}},[{linc_us4_oe_port_load_regulator,cancel_periodic_check,1,[{file,"src/linc_us4_oe_port_load_regulator.erl"},{line,50}]},{linc_us4_oe_port,terminate,2,[{file,"src/linc_us4_oe_port.erl"},{line,697}]},{gen_server,terminate,6,[{file,"gen_server.erl"},{line,721}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,239}]}]}
+     Offender:   [{nb_children,1},{name,linc_us4_oe_port},{mfargs,{linc_us4_oe_port,start_link,[1]}},{restart_type,transient},{shutdown,5000},{child_type,worker}]
+
+2016-11-15 11:21:45 =ERROR REPORT====
+** Generic server <0.728.0> terminating 
+** Last message in was {'EXIT',<0.724.0>,{{badmatch,{error,badarg}},[{linc_us4_oe_port_load_regulator,cancel_periodic_check,1,[{file,"src/linc_us4_oe_port_load_regulator.erl"},{line,50}]},{linc_us4_oe_port,terminate,2,[{file,"src/linc_us4_oe_port.erl"},{line,697}]},{gen_server,terminate,6,[{file,"gen_server.erl"},{line,721}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,239}]}]}}
+** When Server state == {state,false,<0.724.0>,20,<<"tap0">>,[tap,no_pi]}
+** Reason for termination == 
+** {{badmatch,{error,badarg}},[{linc_us4_oe_port_load_regulator,cancel_periodic_check,1,[{file,"src/linc_us4_oe_port_load_regulator.erl"},{line,50}]},{linc_us4_oe_port,terminate,2,[{file,"src/linc_us4_oe_port.erl"},{line,697}]},{gen_server,terminate,6,[{file,"gen_server.erl"},{line,721}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,239}]}]}
+2016-11-15 11:21:45 =CRASH REPORT====
+  crasher:
+    initial call: tuncer:init/1
+    pid: <0.728.0>
+    registered_name: []
+    exception exit: {{{badmatch,{error,badarg}},[{linc_us4_oe_port_load_regulator,cancel_periodic_check,1,[{file,"src/linc_us4_oe_port_load_regulator.erl"},{line,50}]},{linc_us4_oe_port,terminate,2,[{file,"src/linc_us4_oe_port.erl"},{line,697}]},{gen_server,terminate,6,[{file,"gen_server.erl"},{line,721}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,239}]}]},[{gen_server,terminate,6,[{file,"gen_server.erl"},{line,746}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,239}]}]}
+    ancestors: [<0.724.0>,<0.714.0>,<0.711.0>,<0.706.0>,linc_capable_sup,<0.702.0>]
+    messages: []
+    links: []
+    dictionary: []
+    trap_exit: true
+    status: running
+    heap_size: 610
+    stack_size: 27
+    reductions: 1706
+  neighbours:
+2016-11-15 11:21:55 =ERROR REPORT====
+** Generic server <0.731.0> terminating 
+** Last message in was {'EXIT',<0.723.0>,shutdown}
+** When Server state == {state,"LogicalSwitch3-Port2",true,"tap1",physical,3,{ofp_port,2,<<242,200,119,162,219,5>>,"Port2",[],[live],['100mb_fd',copper,autoneg],[copper,autoneg],['100mb_fd',copper,autoneg],['100mb_fd',copper,autoneg],5000,5000},#Ref<0.0.0.394>,#Port<0.1343>,<0.733.0>,undefined,undefined,undefined,undefined,disabled,undefined,none}
+** Reason for termination == 
+** {{badmatch,{error,badarg}},[{linc_us4_oe_port_load_regulator,cancel_periodic_check,1,[{file,"src/linc_us4_oe_port_load_regulator.erl"},{line,50}]},{linc_us4_oe_port,terminate,2,[{file,"src/linc_us4_oe_port.erl"},{line,697}]},{gen_server,terminate,6,[{file,"gen_server.erl"},{line,721}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,239}]}]}
+2016-11-15 11:33:48 =ERROR REPORT====
+** Generic server <0.731.0> terminating 
+** Last message in was {'EXIT',<0.722.0>,shutdown}
+** When Server state == {state,"LogicalSwitch3-Port2",true,"tap1",physical,3,{ofp_port,2,<<98,41,231,109,14,79>>,"Port2",[],[live],['100mb_fd',copper,autoneg],[copper,autoneg],['100mb_fd',copper,autoneg],['100mb_fd',copper,autoneg],5000,5000},#Ref<0.0.0.385>,#Port<0.1341>,<0.736.0>,undefined,undefined,undefined,undefined,disabled,undefined,none}
+** Reason for termination == 
+** {{badmatch,{error,badarg}},[{linc_us4_oe_port_load_regulator,cancel_periodic_check,1,[{file,"src/linc_us4_oe_port_load_regulator.erl"},{line,50}]},{linc_us4_oe_port,terminate,2,[{file,"src/linc_us4_oe_port.erl"},{line,697}]},{gen_server,terminate,6,[{file,"gen_server.erl"},{line,721}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,239}]}]}
+2016-11-15 11:33:48 =CRASH REPORT====
+  crasher:
+    initial call: linc_us4_oe_port:init/1
+    pid: <0.731.0>
+    registered_name: []
+    exception exit: {{{badmatch,{error,badarg}},[{linc_us4_oe_port_load_regulator,cancel_periodic_check,1,[{file,"src/linc_us4_oe_port_load_regulator.erl"},{line,50}]},{linc_us4_oe_port,terminate,2,[{file,"src/linc_us4_oe_port.erl"},{line,697}]},{gen_server,terminate,6,[{file,"gen_server.erl"},{line,721}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,239}]}]},[{gen_server,terminate,6,[{file,"gen_server.erl"},{line,724}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,239}]}]}
+    ancestors: [<0.722.0>,<0.719.0>,<0.713.0>,linc_capable_sup,<0.702.0>]
+    messages: []
+    links: [#Port<0.1341>,<0.736.0>]
+    dictionary: []
+    trap_exit: true
+    status: running
+    heap_size: 4185
+    stack_size: 27
+    reductions: 6272
+  neighbours:
